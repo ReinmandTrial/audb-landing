@@ -1,0 +1,81 @@
+.section-1 {
+   padding-top: 226px;
+   position: relative;
+   &__container {
+      max-width: 1440px;
+   }
+
+   &__content {
+      max-width: 780px;
+      margin: auto;
+      position: relative;
+      z-index: 10;
+   }
+
+   &__title {
+      max-width: fit-content;
+      font-family: var(--font-Druk);
+      font-weight: 900;
+      font-size: 65px;
+      line-height: 100%;
+      text-align: center;
+      background: linear-gradient(
+         91.48deg,
+         #eedd47 4.39%,
+         #e94362 43.08%,
+         #269ff6 71.64%,
+         #bd38fc 92.18%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin: 0 auto 22px;
+      text-transform: uppercase;
+   }
+
+   &__subtitle {
+      text-align: center;
+      text-transform: uppercase;
+      max-width: 440px;
+      line-height: 125%;
+      margin: auto;
+      margin-bottom: 80px;
+   }
+
+   &__cards {
+      height: 505px;
+   }
+
+   &__logo {
+      position: absolute;
+      bottom: 42px;
+      left: 0;
+      z-index: 5;
+      width: 100%;
+   }
+   &__bg {
+      position: absolute;
+      top: 45px;
+      left: 50%;
+      transform: translate(-50%, 0px);
+      width: 550px;
+      height: 1122px;
+      z-index: 0;
+      filter: blur(227.5px);
+      &_1 {
+         background: linear-gradient(
+            178.33deg,
+            #179eff 1.41%,
+            rgba(59, 98, 255, 0) 42.92%
+         );
+      }
+      &_2 {
+         background: rgba(142, 56, 252, 0.25);
+      }
+      &_3 {
+         top: 456px;
+         background: rgba(38, 159, 246, 0.3);
+      }
+   }
+}
