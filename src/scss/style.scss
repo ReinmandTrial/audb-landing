@@ -5,7 +5,8 @@ $fontFamily: 'Roboto';
 $fontSize: 19px;
 // Vars
 :root {
-   --fDruk: 'Druk';
+   --font-Druk: 'Druk';
+   --font-Unbounded: 'Unbounded';
    --white: #ffffff;
    --black: #000000;
 }
@@ -51,3 +52,4 @@ body {
 //Components
 @import './components/header.scss';
 @import './components/footer.scss';
+@import './components/1.scss';
