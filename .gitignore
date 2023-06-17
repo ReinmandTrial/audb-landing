@@ -4,6 +4,5 @@ dist/
 Source/
 version.json
 undefined
-# .gitignore
 **/*.zip
 **/*.rar
