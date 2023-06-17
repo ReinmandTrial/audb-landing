@@ -4,6 +4,5 @@ node_modules/
 Source/
 version.json
 undefined
-# .gitignore
 **/*.zip
 **/*.rar

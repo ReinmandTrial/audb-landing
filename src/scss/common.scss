@@ -1,0 +1,15 @@
+//Typography========================================================================================================================================================
+.h1 {
+   font-family: var(--font-Druk);
+   font-weight: 900;
+   font-size: 65px;
+   line-height: 100%;
+   text-align: center;
+   text-transform: uppercase;
+   @media (max-width: 1200px) {
+      font-size: 45px;
+   }
+   @media (max-width: 767.98px) {
+      font-size: 34px;
+   }
+}
