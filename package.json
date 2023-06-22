@@ -49,5 +49,7 @@
       "webpack-dev-server": "^4.11.1",
       "webpack-stream": "^7.0.0"
    },
-   "dependencies": {}
+   "dependencies": {
+      "swiper": "^9.4.1"
+   }
 }
