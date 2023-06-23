@@ -269,9 +269,6 @@
          opacity: 1;
          transition: all 0.7s ease 1.2s;
       }
-      @media (max-width: 575.98px) {
-         border-radius: 15px;
-      }
       img {
          border-radius: 45px;
          border: 3px solid #3f3f3f;
@@ -279,6 +276,9 @@
          height: 100%;
          object-fit: cover;
          object-position: 50% 20%;
+         @media (max-width: 575.98px) {
+            border-radius: 15px;
+         }
       }
    }
 
