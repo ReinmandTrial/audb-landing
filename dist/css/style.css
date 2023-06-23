@@ -717,7 +717,7 @@ h6 {
   transition: all 0.3s ease 0s;
 }
 
-.trumbs-5__slide.swiper-slide-thumb-active {
+.trumbs-5__slide.swiper-slide-thumb-active.swiper-slide-visible.swiper-slide-active {
   opacity: 1;
   -webkit-transition: all 0.7s ease 1.2s;
   transition: all 0.7s ease 1.2s;
@@ -760,7 +760,7 @@ h6 {
           transform: scale(0.5);
 }
 
-.swiper-slide-thumb-active .trumbs-5__text {
+.swiper-slide-thumb-active.swiper-slide-visible.swiper-slide-active .trumbs-5__text {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
