@@ -7,6 +7,7 @@ import Swiper, { Autoplay, EffectCoverflow, Navigation, Thumbs } from 'swiper';
 new Swiper('#swiper5', {
    modules: [Navigation, EffectCoverflow, Thumbs, Autoplay],
    spaceBetween: 20,
+   slidesPerView: 1,
    speed: 1300,
    grabCursor: true,
    //    loop: true,
@@ -27,6 +28,7 @@ new Swiper('#swiper5', {
          el: '#trumbs5',
          direction: 'vertical',
          speed: 1500,
+         slidesPerView: 1,
       },
    },
 });
