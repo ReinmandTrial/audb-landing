@@ -8,7 +8,8 @@
    "type": "module",
    "scripts": {
       "start": "npm i --legacy-peer-deps",
-      "dev": "gulp && webpack serve --progress -c config/webpack.dev.js",
+      "dev": "webpack serve --progress -c config/webpack.dev.js",
+      "font": "gulp fontsTasks",
       "build": "gulp build --build",
       "sprite": "gulp sprite"
    },
