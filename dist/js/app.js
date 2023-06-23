@@ -3320,6 +3320,7 @@
     new core("#swiper5", {
         modules: [ Navigation, EffectCoverflow, Thumb, Autoplay ],
         spaceBetween: 20,
+        slidesPerView: 1,
         speed: 1300,
         grabCursor: true,
         effect: "coverflow",
@@ -3335,7 +3336,8 @@
             swiper: {
                 el: "#trumbs5",
                 direction: "vertical",
-                speed: 1500
+                speed: 1500,
+                slidesPerView: 1
             }
         }
     });
