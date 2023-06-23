@@ -1,0 +1,35 @@
+.section-4 {
+   &__container {
+      max-width: 1030px;
+   }
+
+   &__content {
+      position: relative;
+      padding: 31% 0px 240px 0px;
+      @media (max-width: 991.98px) {
+         padding: 31% 0px 175px 0px;
+      }
+      @media (max-width: 767.98px) {
+         padding: 31% 0px 110px 0px;
+      }
+      @media (max-width: 475.98px) {
+         padding: 31% 0px 50px 0px;
+      }
+   }
+
+   &__title {
+      position: relative;
+      z-index: 2;
+      max-width: 540px;
+      margin: auto;
+   }
+
+   &__bg {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      transform: translate(0px, -50%);
+      pointer-events: none;
+   }
+}

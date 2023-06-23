@@ -22,7 +22,7 @@ global.app = {
 
 const fonts = gulp.series(reset, otfToTtf, ttfToWoff, fonstStyle);
 
-const development = gulp.series(fonts);
+const fontsTasks = gulp.series(fonts);
 const buildTasks = gulp.series(
    fonts,
    jsDev,
@@ -40,6 +40,4 @@ export { sprite };
 const build = gulp.series(buildTasks);
 
 export { build };
-export { development };
-
-gulp.task('default', development);
+export { fontsTasks };
