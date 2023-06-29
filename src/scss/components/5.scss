@@ -13,8 +13,28 @@
    &__container {
       max-width: 1250px;
    }
-
+   &__bg {
+      border-radius: 1122px;
+      background: (
+         linear-gradient(
+            177deg,
+            rgba(23, 158, 255, 0.4) 0%,
+            rgba(59, 98, 255, 0) 100%
+         )
+      );
+      filter: blur(227.5px);
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      top: 175px;
+      transform: translate(-50%, 0px);
+      height: 1122px;
+      max-width: 845px;
+      width: 100%;
+   }
    &__content {
+      position: relative;
+      z-index: 2;
       display: flex;
       gap: 30px;
       @media (max-width: 991.98px) {
