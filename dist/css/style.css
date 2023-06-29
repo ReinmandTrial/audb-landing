@@ -671,7 +671,26 @@ h6 {
   max-width: 1250px;
 }
 
+.section-5__bg {
+  border-radius: 1122px;
+  background: linear-gradient(177deg, rgba(23, 158, 255, 0.4) 0%, rgba(59, 98, 255, 0) 100%);
+  -webkit-filter: blur(227.5px);
+          filter: blur(227.5px);
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 175px;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  height: 1122px;
+  max-width: 845px;
+  width: 100%;
+}
+
 .section-5__content {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,19 +917,14 @@ h6 {
 
 .trumbs-5__slide {
   opacity: 0;
-}
-
-.trumbs-5__slide.swiper-slide-prev,
-.trumbs-5__slide.swiper-slide-next {
-  opacity: 0;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
 }
 
 .trumbs-5__slide.swiper-slide-visible.swiper-slide-active {
   opacity: 1;
-  -webkit-transition: all 0.7s ease 1.2s;
-  transition: all 0.7s ease 1.2s;
+  -webkit-transition: opacity 0.7s ease 1.2s;
+  transition: opacity 0.7s ease 1.2s;
 }
 
 .trumbs-5__slide img {
@@ -934,20 +948,14 @@ h6 {
   font-weight: 600;
   line-height: 100%;
   text-transform: uppercase;
-  opacity: 0;
   -webkit-transform: scale(0.5);
       -ms-transform: scale(0.5);
           transform: scale(0.5);
-}
-
-.swiper-slide-prev .trumbs-5__text,
-.swiper-slide-next .trumbs-5__text {
   opacity: 0;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transition: opacity 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, opacity 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
 }
 
 .swiper-slide-visible.swiper-slide-active .trumbs-5__text {
@@ -955,13 +963,15 @@ h6 {
       -ms-transform: scale(1);
           transform: scale(1);
   opacity: 1;
-  -webkit-transition: all 1s cubic-bezier(0.51, 0.82, 0.15, 1.18) 1.2s;
-  transition: all 1s cubic-bezier(0.51, 0.82, 0.15, 1.18) 1.2s;
+  -webkit-transition: opacity 1s cubic-bezier(0.51, 0.82, 0.15, 1.18) 1.2s, -webkit-transform 1s cubic-bezier(0.51, 0.82, 0.15, 1.18) 1.2s;
+  transition: opacity 1s cubic-bezier(0.51, 0.82, 0.15, 1.18) 1.2s, -webkit-transform 1s cubic-bezier(0.51, 0.82, 0.15, 1.18) 1.2s;
+  transition: transform 1s cubic-bezier(0.51, 0.82, 0.15, 1.18) 1.2s, opacity 1s cubic-bezier(0.51, 0.82, 0.15, 1.18) 1.2s;
+  transition: transform 1s cubic-bezier(0.51, 0.82, 0.15, 1.18) 1.2s, opacity 1s cubic-bezier(0.51, 0.82, 0.15, 1.18) 1.2s, -webkit-transform 1s cubic-bezier(0.51, 0.82, 0.15, 1.18) 1.2s;
 }
 
 .section-6 {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .section-6__bg {
