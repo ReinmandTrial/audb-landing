@@ -1,4 +1,5 @@
 .section-8 {
+   margin-bottom: 34%;
    height: 66vw;
    max-height: 950px;
    background: linear-gradient(
@@ -7,6 +8,9 @@
       rgba(115, 52, 217, 1) 50%,
       rgba(3, 1, 6, 1) 80%
    );
+   @media (max-width: 767.98px) {
+      margin-bottom: 40%;
+   }
    position: relative;
    &__silhouette {
       position: absolute;
