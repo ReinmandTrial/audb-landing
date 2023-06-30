@@ -1,6 +1,5 @@
 .section-5 {
    position: relative;
-   z-index: 2;
    margin-top: 50px;
    margin-bottom: 150px;
    @media (max-width: 991.98px) {
@@ -24,19 +23,20 @@
       );
       filter: blur(227.5px);
       position: absolute;
-      z-index: 1;
+      z-index: 2;
       left: 50%;
       top: 175px;
       transform: translate(-50%, 0px);
       height: 1122px;
       max-width: 845px;
       width: 100%;
+      will-change: filter, transform;
    }
    &__content {
-      position: relative;
-      z-index: 2;
       display: flex;
       gap: 30px;
+      position: relative;
+      z-index: 3;
       @media (max-width: 991.98px) {
          flex-direction: column-reverse;
          gap: 160px;

@@ -18,9 +18,9 @@
    }
 
    &__logo {
-      height: 43px;
+      flex: 0 0 123px;
       @media (max-width: 767.98px) {
-         height: 27px;
+         flex: 0 0 75px;
       }
       img {
          width: 100%;

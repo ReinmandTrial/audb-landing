@@ -20,7 +20,7 @@
       max-width: 780px;
       margin: auto;
       position: relative;
-      z-index: 10;
+      z-index: 3;
       @media (max-width: 767.98px) {
          display: flex;
          flex-direction: column;
@@ -65,12 +65,13 @@
    }
 
    &__logo {
+      will-change: transform;
       display: block;
       position: absolute;
       bottom: -62px;
       left: 50%;
       transform: translate(-50%, 0px);
-      z-index: 5;
+      z-index: 2;
       width: 106vw;
       @media (max-width: 767.98px) {
          bottom: 10px;
@@ -81,13 +82,14 @@
       }
    }
    &__bg {
+      will-change: filter, transform;
       position: absolute;
       top: 45px;
       left: 50%;
       transform: translate(-50%, 0px);
       width: 550px;
       height: 1122px;
-      z-index: 0;
+      z-index: 2;
       filter: blur(227.5px);
       @media (max-width: 767.98px) {
          top: 60px;
