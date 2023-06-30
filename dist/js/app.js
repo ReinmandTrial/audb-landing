@@ -3341,4 +3341,46 @@
             }
         }
     });
+    new core("#swiper7l", {
+        spaceBetween: 20,
+        watchOverflow: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                centeredSlides: true
+            },
+            767: {
+                slidesPerView: 2.2
+            },
+            991: {
+                slidesPerView: 3
+            }
+        }
+    });
+    new core("#swiper7r", {
+        spaceBetween: 20,
+        watchOverflow: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                centeredSlides: true
+            },
+            767: {
+                slidesPerView: 2.2
+            },
+            991: {
+                slidesPerView: 3
+            }
+        }
+    });
+    new core(".mySwiper", {
+        effect: "cards",
+        cardsEffect: {
+            perSlideOffset: 10,
+            perSlideRotate: 0,
+            rotate: false
+        },
+        direction: "vertical",
+        slideToClickedSlide: true
+    });
 })();
