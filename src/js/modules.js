@@ -77,13 +77,13 @@ new Swiper('#swiper7r', {
 });
 
 // screen 14
-new Swiper('.mySwiper', {
-   effect: 'cards',
-   cardsEffect: {
-      perSlideOffset: 10,
-      perSlideRotate: 0,
-      rotate: false,
-   },
-   direction: 'vertical',
-   slideToClickedSlide: true,
-});
+// new Swiper('.mySwiper', {
+//    effect: 'cards',
+//    cardsEffect: {
+//       perSlideOffset: 10,
+//       perSlideRotate: 0,
+//       rotate: false,
+//    },
+//    direction: 'vertical',
+//    slideToClickedSlide: true,
+// });

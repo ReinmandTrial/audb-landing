@@ -37,7 +37,7 @@
       "gulp-version-number": "^0.2.4",
       "gulp-webpcss": "^1.1.1",
       "gulp-zip": "^5.1.0",
-      "html-webpack-plugin": "^5.5.0",
+      "html-webpack-plugin": "^5.5.3",
       "mini-css-extract-plugin": "2.4.7",
       "sass": "^1.56.1",
       "sass-loader": "^13.2.0",

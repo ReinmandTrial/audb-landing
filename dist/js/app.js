@@ -3373,14 +3373,4 @@
             }
         }
     });
-    new core(".mySwiper", {
-        effect: "cards",
-        cardsEffect: {
-            perSlideOffset: 10,
-            perSlideRotate: 0,
-            rotate: false
-        },
-        direction: "vertical",
-        slideToClickedSlide: true
-    });
 })();
