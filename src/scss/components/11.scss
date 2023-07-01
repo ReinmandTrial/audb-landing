@@ -1,0 +1,120 @@
+.section-11 {
+   &__static-content {
+      position: relative;
+      z-index: 4;
+   }
+
+   &__title {
+      max-width: 800px;
+      margin: 0 auto 66px;
+      @media (max-width: 767.98px) {
+         margin-bottom: 33px;
+      }
+   }
+
+   &__sub-title {
+      text-align: center;
+      font-size: 19px;
+      line-height: 125%;
+      text-transform: uppercase;
+      max-width: 580px;
+      margin: auto;
+      @media (max-width: 767.98px) {
+         font-size: 17px;
+      }
+      &_1 {
+         margin-bottom: 66px;
+         @media (max-width: 767.98px) {
+            margin-bottom: 33px;
+         }
+      }
+
+      &_2 {
+         font-weight: 700;
+      }
+   }
+
+   &__dynamic-content {
+      padding: 25% 0px;
+      position: relative;
+   }
+
+   &__bg {
+      will-change: transform, filter;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      width: 61vw;
+      height: 61vw;
+      background: rgba(47, 47, 47, 0.69);
+      filter: blur(227.5px);
+      @media (max-width: 991.98px) {
+         filter: blur(70px);
+      }
+      @media (max-width: 767.98px) {
+         width: 80vw;
+         height: 80vw;
+      }
+   }
+
+   &__img {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.4;
+      width: 100%;
+      height: 100%;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+   }
+
+   &__list {
+      position: relative;
+      z-index: 3;
+      margin: auto;
+      max-width: 400px;
+      @media (max-width: 767.98px) {
+         max-width: 300px;
+      }
+   }
+
+   &__item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+   }
+
+   &__item-img {
+      flex: 0 0 115px;
+      height: 155px;
+      border-radius: 15px;
+      overflow: hidden;
+      transform: skew(0, -7deg);
+      @media (max-width: 767.98px) {
+         height: 125px;
+         flex: 0 0 93px;
+      }
+      img {
+         object-fit: cover;
+         height: 100%;
+         width: 100%;
+      }
+   }
+
+   &__item-text {
+      font-size: 19px;
+      line-height: 125%;
+      text-transform: uppercase;
+      @media (max-width: 767.98px) {
+         font-size: 12px;
+      }
+   }
+}
