@@ -49,8 +49,10 @@
       border-radius: 50%;
       width: 61vw;
       height: 61vw;
+      max-width: 900px;
+      max-height: 900px;
       background: rgba(47, 47, 47, 0.69);
-      filter: blur(227.5px);
+      filter: blur(100px);
       @media (max-width: 991.98px) {
          filter: blur(70px);
       }
@@ -61,6 +63,7 @@
    }
 
    &__img {
+      will-change: transform;
       position: absolute;
       z-index: 2;
       top: 50%;
@@ -93,6 +96,7 @@
    }
 
    &__item-img {
+      will-change: transform;
       flex: 0 0 115px;
       height: 155px;
       border-radius: 15px;
