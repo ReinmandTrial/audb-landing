@@ -16,11 +16,10 @@
    &__dynamic-content {
       position: relative;
       z-index: 3;
-      max-width: 550px;
+      width: 38vw;
       margin: auto;
-      padding: 0px 60px;
-      @media (max-width: 767.98px) {
-         max-width: 400px;
+      @media (max-width: 1200px) {
+         width: 50vw;
       }
    }
 
@@ -33,27 +32,33 @@
    }
 
    &__text {
+      font-size: 1.5vw;
       line-height: 125%;
       text-transform: uppercase;
       padding-top: 5%;
+      @media (max-width: 1200px) {
+         font-size: 2vw;
+      }
       @media (max-width: 767.98px) {
          font-size: 12px;
-      }
-      @media (max-width: 475.98px) {
          padding-top: 0;
       }
    }
 
    &__img {
+      align-self: center;
       will-change: transform;
-      height: 155px;
-      flex: 0 0 200px;
+      height: 11vw;
+      flex: 0 0 38%;
       border-radius: 20px;
       overflow: hidden;
-      transform: skew(0, 20deg);
+      transform: skew(0, 15deg);
+      @media (max-width: 1200px) {
+         flex: 0 0 40%;
+         height: 15vw;
+      }
       @media (max-width: 767.98px) {
-         height: 80px;
-         flex: 0 0 100px;
+         border-radius: 10px;
       }
       img {
          width: 100%;
@@ -102,6 +107,9 @@
       background: rgba(23, 158, 255, 0.4);
       filter: blur(100px);
       z-index: 1;
+      @media (min-width: 1400px) {
+         filter: blur(300px);
+      }
       @media (max-width: 767.98px) {
          filter: blur(50px);
       }
