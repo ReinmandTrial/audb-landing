@@ -50,6 +50,7 @@ body {
 }
 
 //UI
+@import './mixins.scss';
 @import './common.scss';
 //Components
 @import './components/header.scss';

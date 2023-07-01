@@ -1,0 +1,136 @@
+// TODO Круг Карточка и цвет БГ это элемент который просто будет делать Scale
+// Переписать структуру
+.section-13 {
+   padding: 150px 0px;
+   @media (max-width: 991.98px) {
+      padding: 75px 0px;
+   }
+   &__title {
+      text-align: center;
+      padding: 0px 15px;
+   }
+   &__content {
+      position: relative;
+      padding: 48% 0px;
+   }
+   &__dynamic-content {
+      position: relative;
+      z-index: 3;
+      max-width: 550px;
+      margin: auto;
+      padding: 0px 60px;
+      @media (max-width: 767.98px) {
+         max-width: 400px;
+      }
+   }
+
+   &__item {
+      display: flex;
+      gap: 30px;
+      @media (max-width: 991.98px) {
+         gap: 10px;
+      }
+   }
+
+   &__text {
+      line-height: 125%;
+      text-transform: uppercase;
+      padding-top: 5%;
+      @media (max-width: 767.98px) {
+         font-size: 12px;
+      }
+      @media (max-width: 475.98px) {
+         padding-top: 0;
+      }
+   }
+
+   &__img {
+      will-change: transform;
+      height: 155px;
+      flex: 0 0 200px;
+      border-radius: 20px;
+      overflow: hidden;
+      transform: skew(0, 20deg);
+      @media (max-width: 767.98px) {
+         height: 80px;
+         flex: 0 0 100px;
+      }
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__bg {
+      will-change: transform, opacity;
+      pointer-events: none;
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      transform: translate(-50%, 0px);
+      width: 106vw;
+      max-width: 1537px;
+      &_top {
+         bottom: 50%;
+      }
+
+      &_bottom {
+         top: 50%;
+         transform: translate(-50%, 0px) rotateX(-180deg);
+         opacity: 0.3;
+      }
+   }
+
+   &__rounded {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+   }
+   &__rounded-bg {
+      will-change: filter, transform;
+      position: absolute;
+      width: 60%;
+      height: 60%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: rgba(23, 158, 255, 0.4);
+      filter: blur(100px);
+      z-index: 1;
+      @media (max-width: 767.98px) {
+         filter: blur(50px);
+      }
+   }
+
+   &__round {
+      will-change: transform;
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: auto;
+      border-radius: 50%;
+
+      &_1 {
+         width: 90vw;
+         height: 90vw;
+         @include border-gradient(#179eff, #8ca3ff, 2vw);
+      }
+
+      &_2 {
+         width: 84vw;
+         height: 84vw;
+         @include border-gradient(
+            rgba(23, 158, 255, 1),
+            rgba(59, 98, 255, 1),
+            2vw
+         );
+      }
+   }
+}

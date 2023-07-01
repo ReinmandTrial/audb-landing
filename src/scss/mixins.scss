@@ -1,0 +1,13 @@
+@mixin border-gradient($from, $to, $weight: 0) {
+   $mix-main: mix($from, $to);
+   $mix-sub-from: mix($mix-main, $from);
+   $mix-sub-to: mix($mix-main, $to);
+
+   box-shadow: 0 1px 0 $weight rgba($mix-sub-to, 0.25),
+      0 -1px 0 $weight rgba($mix-sub-from, 0.25),
+      1px 0 0 $weight rgba($mix-sub-to, 0.25),
+      -1px 0 0 $weight rgba($mix-sub-from, 0.25),
+      1px -1px 0 $weight rgba($mix-main, 0.5),
+      -1px 1px 0 $weight rgba($mix-main, 0.5), 1px 1px 0 $weight rgba($to, 0.75),
+      -1px -1px 0 $weight rgba($from, 0.75);
+}
