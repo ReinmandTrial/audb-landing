@@ -4,6 +4,7 @@ import 'swiper/css/thumbs';
 
 import Swiper, {
    Autoplay,
+   EffectCards,
    EffectCoverflow,
    FreeMode,
    Navigation,
@@ -77,13 +78,34 @@ new Swiper('#swiper7r', {
 });
 
 // screen 14
-// new Swiper('.mySwiper', {
-//    effect: 'cards',
-//    cardsEffect: {
-//       perSlideOffset: 10,
-//       perSlideRotate: 0,
-//       rotate: false,
-//    },
-//    direction: 'vertical',
-//    slideToClickedSlide: true,
-// });
+new Swiper('#teamSlider', {
+   modules: [EffectCoverflow, Navigation],
+   effect: 'coverflow',
+   slidesPerView: 1,
+   allowTouchMove: false,
+   speed: 1000,
+   coverflowEffect: {
+      rotate: 0,
+      depth: calcDepth(),
+      slideShadows: false,
+      stretch: calcStretch(),
+   },
+   slideToClickedSlide: true,
+   direction: 'vertical',
+   navigation: {
+      prevEl: '.section-14__btn_next',
+      nextEl: '.section-14__btn_prev',
+   },
+});
+
+function calcDepth() {
+   const width = window.innerWidth;
+   if (width > 991) return 250;
+   if (width > 0) return 350;
+}
+
+function calcStretch() {
+   const width = window.innerWidth;
+   if (width > 991) return 800;
+   if (width > 0) return 1100;
+}
