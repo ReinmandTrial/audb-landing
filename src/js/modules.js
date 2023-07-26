@@ -2,16 +2,9 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/thumbs';
 
-import Swiper, {
-   Autoplay,
-   EffectCards,
-   EffectCoverflow,
-   FreeMode,
-   Navigation,
-   Thumbs,
-} from 'swiper';
+import Swiper, { Autoplay, EffectCoverflow, Navigation, Thumbs } from 'swiper';
 
-// Screen 5
+// Screen 5========================================================================================================================================================
 new Swiper('#swiper5', {
    modules: [Navigation, EffectCoverflow, Thumbs, Autoplay],
    spaceBetween: 20,
@@ -41,7 +34,7 @@ new Swiper('#swiper5', {
    },
 });
 
-// Screen 7
+// Screen 7========================================================================================================================================================
 new Swiper('#swiper7l', {
    spaceBetween: 20,
    watchOverflow: true,
@@ -77,13 +70,19 @@ new Swiper('#swiper7r', {
    },
 });
 
-// screen 14
+// Screen 14========================================================================================================================================================
+const teamSliders = document.querySelector('#teamSlider .swiper-wrapper')
+   ?.children?.length;
+
 new Swiper('#teamSlider', {
    modules: [EffectCoverflow, Navigation],
    effect: 'coverflow',
    slidesPerView: 1,
    allowTouchMove: false,
+   touchEventsTarget: 'wrapper',
    speed: 1000,
+   nested: true,
+   initialSlide: teamSliders,
    coverflowEffect: {
       rotate: 0,
       depth: calcDepth(),
@@ -100,12 +99,14 @@ new Swiper('#teamSlider', {
 
 function calcDepth() {
    const width = window.innerWidth;
-   if (width > 991) return 250;
-   if (width > 0) return 350;
+   if (width > 991) return 100;
+   if (width > 0) return 100;
 }
 
 function calcStretch() {
    const width = window.innerWidth;
-   if (width > 991) return 800;
-   if (width > 0) return 1100;
+   if (width > 991) return 550;
+   if (width > 0) return 750;
 }
+
+// Screen 15========================================================================================================================================================
