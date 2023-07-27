@@ -116,9 +116,16 @@ new Swiper('#roadmapSlider', {
    wrapperClass: 'section-15__wrapper',
    spaceBetween: 60,
    grabCursor: true,
-   autoHeight: true,
    on: {
       slideChange: onRoadmapSlideChange,
+   },
+   breakpoints: {
+      0: {
+         autoHeight: true,
+      },
+      991: {
+         autoHeight: false,
+      },
    },
 });
 

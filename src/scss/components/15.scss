@@ -31,7 +31,6 @@
 }
 
 .roadmap-slide {
-   height: fit-content;
    border-radius: 45px;
    background: #181818;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -41,6 +40,7 @@
       flex-direction: column;
       padding: 35px 20px;
       gap: 20px;
+      height: fit-content;
    }
    &__col {
       flex: 0 0 50%;
@@ -58,6 +58,8 @@
       }
 
       &_right {
+         display: flex;
+         align-items: center;
       }
    }
 
