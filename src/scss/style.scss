@@ -5,7 +5,7 @@ $fontFamily: 'Roboto';
 $fontSize: 19px;
 // Vars
 :root {
-   --font-Druk: 'Druk';
+   --font-Druk: 'Druk-Font';
    --font-Unbounded: 'Unbounded';
    --white: #ffffff;
    --black: #000000;
@@ -48,6 +48,11 @@ body {
    height: 100%;
    max-width: 1440px;
 }
+
+// Vendor
+@import '/node_modules/swiper/swiper.min.css';
+@import '/node_modules/swiper/modules/effect-coverflow/effect-coverflow.min.css';
+@import '/node_modules/swiper/modules/thumbs/thumbs.min.css';
 
 //UI
 @import './mixins.scss';

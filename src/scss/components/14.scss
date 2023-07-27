@@ -1,5 +1,10 @@
 .section-14 {
+   margin-bottom: 210px;
+   @media (max-width: 991.98px) {
+      margin-bottom: 60px;
+   }
    &__content {
+      border-radius: 40px;
       overflow: hidden;
       background: linear-gradient(
          165deg,
@@ -103,12 +108,9 @@
    display: flex !important;
    align-items: center;
    gap: 5%;
-   top: 0;
-   transition: top 0.8s ease 0s;
    @media (any-hover: hover) {
       &:not(.swiper-slide-active):hover {
          top: -20px;
-         transition: top 0.8s ease 0s;
          cursor: pointer;
       }
    }

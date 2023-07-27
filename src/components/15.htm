@@ -1,40 +1,352 @@
 <section class='section-15'>
     <div class="section-15__container">
-        <!-- <div class="section-15__content">
-            <svg width="165" height="166" viewBox="0 0 165 166" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <mask id="path-1-inside-1_470_414" fill="white">
-                    <path
-                        d="M165 83C165 128.84 128.063 166 82.5 166C36.9365 166 1.05814e-09 128.84 6.81665e-10 83C3.05192e-10 37.1604 36.9365 -3.35634e-07 82.5 -7.49661e-07C128.063 -1.16369e-06 165 37.1604 165 83ZM32.3945 83C32.3945 110.84 54.8275 133.409 82.5 133.409C110.172 133.409 132.605 110.84 132.605 83C132.605 55.1598 110.172 32.5908 82.5 32.5908C54.8275 32.5908 32.3945 55.1598 32.3945 83Z" />
-                </mask>
-                <path
-                    d="M165 83C165 128.84 128.063 166 82.5 166C36.9365 166 1.05814e-09 128.84 6.81665e-10 83C3.05192e-10 37.1604 36.9365 -3.35634e-07 82.5 -7.49661e-07C128.063 -1.16369e-06 165 37.1604 165 83ZM32.3945 83C32.3945 110.84 54.8275 133.409 82.5 133.409C110.172 133.409 132.605 110.84 132.605 83C132.605 55.1598 110.172 32.5908 82.5 32.5908C54.8275 32.5908 32.3945 55.1598 32.3945 83Z"
-                    stroke="url(#paint0_linear_470_414)" stroke-width="30" mask="url(#path-1-inside-1_470_414)" />
-                <defs>
-                    <linearGradient id="paint0_linear_470_414" x1="9.31451" y1="-73.7776" x2="157.814" y2="-69.9724" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#EEDD47" />
-                        <stop offset="0.440697" stop-color="#E94362" />
-                        <stop offset="0.765991" stop-color="#269FF6" />
-                        <stop offset="1" stop-color="#BD38FC" />
-                    </linearGradient>
-                </defs>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400">
-                <rect width="100%" height="100%" fill="#1F2024" />
-                <g>
-                    <circle stroke="url(#paint0_linear_470_414)" cx="150" cy="150" r="100" stroke-width="15" stroke-dasharray="" fill="none" />
-                </g>
-                <g>
-                    <circle stroke="url(#paint0_linear_470_414)" cx="150" cy="150" r="80" stroke-width="15" stroke-dasharray="" fill="none" />
-                </g>
-                <defs>
-                    <linearGradient id="paint0_linear_470_414" x1="9.31451" y1="-73.7776" x2="157.814" y2="-69.9724" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#EEDD47" />
-                        <stop offset="0.440697" stop-color="#E94362" />
-                        <stop offset="0.765991" stop-color="#269FF6" />
-                        <stop offset="1" stop-color="#BD38FC" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div> -->
+        <div class="section-15__content">
+            <h2 class="section-15__title h1">AUDb roadmap</h2>
+            <div data-watch='roadmap' data-watch-once id='roadmapSlider' class="section-15__slider swiper">
+                <div class="section-15__wrapper">
+                    <div class="section-15__slide roadmap-slide">
+                        <div class="roadmap-slide__col roadmap-slide__col_left">
+                            <h5 class="roadmap-slide__title">
+                                <span>Stage 1:</span>
+                                Launch of the mvp
+                            </h5>
+                            <div class="roadmap-slide__cirlce-loader circle-loader">
+                                <svg class='circle-loader__svg'>
+                                    <circle stroke="#696969" cx="50%" cy="50%" r="75" stroke-width="16" fill="none" />
+                                    <circle stroke="#696969" cx="50%" cy="50%" r="55" stroke-width="16" fill="none" />
+                                    <circle stroke="url(#circleLG)" cx="50%" cy="50%" r="75" stroke-width="16" fill="none" />
+                                    <circle stroke="url(#circleLG)" cx="50%" cy="50%" r="55" stroke-width="16" fill="none" />
+                                    <defs>
+                                        <linearGradient id="circleLG" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.1" stop-color="#EEDD47" />
+                                            <stop offset="0.4" stop-color="#E94362" />
+                                            <stop offset="0.7" stop-color="#269FF6" />
+                                            <stop offset="1" stop-color="#BD38FC" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span class="circle-loader__percent">0%</span>
+                            </div>
+                            <div class="roadmap-slide__linear-loader linear-loader">
+                                <div class="linear-loader__bg"></div>
+                                <span class="linear-loader__percent">0%</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-slide__col roadmap-slide__col_right">
+                            <ul class="roadmap-slide__list roadmap-list">
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox ">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Сollect a database of 100 million tracks</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Develop and launch a system for scanning streams of online radio stations</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Test the system (successfully tested on 50 radios within a year)</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Develop a system for sorting scanned data by parameters</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">
+                                        Develop a system for searching and collecting parameters by specific requests (for example, by
+                                        contractor)
+                                    </p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Launch project’s site</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section-15__slide roadmap-slide">
+                        <div class="roadmap-slide__col roadmap-slide__col_left">
+                            <h5 class="roadmap-slide__title">
+                                <span>Stage 2:</span>
+                                Launch of the catalog
+                            </h5>
+                            <div class="roadmap-slide__cirlce-loader circle-loader">
+                                <svg class='circle-loader__svg'>
+                                    <circle stroke="#696969" cx="50%" cy="50%" r="75" stroke-width="16" fill="none" />
+                                    <circle stroke="#696969" cx="50%" cy="50%" r="55" stroke-width="16" fill="none" />
+                                    <circle stroke="url(#circleLG)" cx="50%" cy="50%" r="75" stroke-width="16" fill="none" />
+                                    <circle stroke="url(#circleLG)" cx="50%" cy="50%" r="55" stroke-width="16" fill="none" />
+                                    <defs>
+                                        <linearGradient id="circleLG" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.1" stop-color="#EEDD47" />
+                                            <stop offset="0.4" stop-color="#E94362" />
+                                            <stop offset="0.7" stop-color="#269FF6" />
+                                            <stop offset="1" stop-color="#BD38FC" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span class="circle-loader__percent">0%</span>
+                            </div>
+                            <div class="roadmap-slide__linear-loader linear-loader">
+                                <div class="linear-loader__bg"></div>
+                                <span class="linear-loader__percent">0%</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-slide__col roadmap-slide__col_right">
+                            <ul class="roadmap-slide__list roadmap-list">
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Launch of the catalog</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Filling the catalog</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Linking audio fingerprints to the catalog database. Blockchain + token</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Development of an identification system</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">
+                                        Launching billing
+                                    </p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Deployment of monitoring platform</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section-15__slide roadmap-slide">
+                        <div class="roadmap-slide__col roadmap-slide__col_left">
+                            <h5 class="roadmap-slide__title">
+                                <span>Stage 3:</span>
+                                Launch of the marketplace
+                            </h5>
+                            <div class="roadmap-slide__cirlce-loader circle-loader">
+                                <svg class='circle-loader__svg'>
+                                    <circle stroke="#696969" cx="50%" cy="50%" r="75" stroke-width="16" fill="none" />
+                                    <circle stroke="#696969" cx="50%" cy="50%" r="55" stroke-width="16" fill="none" />
+                                    <circle stroke="url(#circleLG)" cx="50%" cy="50%" r="75" stroke-width="16" fill="none" />
+                                    <circle stroke="url(#circleLG)" cx="50%" cy="50%" r="55" stroke-width="16" fill="none" />
+                                    <defs>
+                                        <linearGradient id="circleLG" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.1" stop-color="#EEDD47" />
+                                            <stop offset="0.4" stop-color="#E94362" />
+                                            <stop offset="0.7" stop-color="#269FF6" />
+                                            <stop offset="1" stop-color="#BD38FC" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span class="circle-loader__percent">0%</span>
+                            </div>
+                            <div class="roadmap-slide__linear-loader linear-loader">
+                                <div class="linear-loader__bg"></div>
+                                <span class="linear-loader__percent">0%</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-slide__col roadmap-slide__col_right">
+                            <ul class="roadmap-slide__list roadmap-list">
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Streaming platform</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Music marketplace</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Recommendation system + updates feed</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Music promotion system</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">
+                                        Merchandise and tickets marketplace
+                                    </p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Smart targeted search for musical analogues</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Integration with other music services for account transfer</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section-15__slide roadmap-slide">
+                        <div class="roadmap-slide__col roadmap-slide__col_left">
+                            <h5 class="roadmap-slide__title">
+                                <span>Stage 4:</span>
+                                Launch of the social network
+                            </h5>
+                            <div class="roadmap-slide__cirlce-loader circle-loader">
+                                <svg class='circle-loader__svg'>
+                                    <circle stroke="#696969" cx="50%" cy="50%" r="75" stroke-width="16" fill="none" />
+                                    <circle stroke="#696969" cx="50%" cy="50%" r="55" stroke-width="16" fill="none" />
+                                    <circle stroke="url(#circleLG)" cx="50%" cy="50%" r="75" stroke-width="16" fill="none" />
+                                    <circle stroke="url(#circleLG)" cx="50%" cy="50%" r="55" stroke-width="16" fill="none" />
+                                    <defs>
+                                        <linearGradient id="circleLG" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.1" stop-color="#EEDD47" />
+                                            <stop offset="0.4" stop-color="#E94362" />
+                                            <stop offset="0.7" stop-color="#269FF6" />
+                                            <stop offset="1" stop-color="#BD38FC" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span class="circle-loader__percent">0%</span>
+                            </div>
+                            <div class="roadmap-slide__linear-loader linear-loader">
+                                <div class="linear-loader__bg"></div>
+                                <span class="linear-loader__percent">0%</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-slide__col roadmap-slide__col_right">
+                            <ul class="roadmap-slide__list roadmap-list">
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Artist pages transform into communities</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Updates feed turns into a news feed</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Integration of banking systems + influencer cards</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Account promotion system</p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">
+                                        Tokenization of creativity, NFT-crowdfunding
+                                    </p>
+                                </li>
+                                <li class="roadmap-list__item">
+                                    <div class="roadmap-list__checkbox">
+                                        <svg>
+                                            <use xlink:href='@img/icons/icons.svg#svg-check'></use>
+                                        </svg>
+                                    </div>
+                                    <p class="roadmap-list__text">Fast smart-contracts system</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

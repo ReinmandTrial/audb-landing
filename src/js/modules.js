@@ -1,8 +1,6 @@
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/thumbs';
-
 import Swiper, { Autoplay, EffectCoverflow, Navigation, Thumbs } from 'swiper';
+
+import { counter } from './utils.js';
 
 // Screen 5========================================================================================================================================================
 new Swiper('#swiper5', {
@@ -76,6 +74,8 @@ const teamSliders = document.querySelector('#teamSlider .swiper-wrapper')
 
 new Swiper('#teamSlider', {
    modules: [EffectCoverflow, Navigation],
+   // wrapperClass: 'section-14__slider-wrapper',
+   // slideClass: 'team-slide',
    effect: 'coverflow',
    slidesPerView: 1,
    allowTouchMove: false,
@@ -110,3 +110,32 @@ function calcStretch() {
 }
 
 // Screen 15========================================================================================================================================================
+
+new Swiper('#roadmapSlider', {
+   slideClass: 'roadmap-slide',
+   wrapperClass: 'section-15__wrapper',
+   spaceBetween: 60,
+   grabCursor: true,
+   autoHeight: true,
+   on: {
+      slideChange: onRoadmapSlideChange,
+   },
+});
+
+export function addCheckToItems(list) {
+   list.forEach((item, i) => {
+      setTimeout(() => {
+         item.classList.add('_check');
+      }, 300 * ++i);
+   });
+}
+
+function onRoadmapSlideChange(slider) {
+   const activeSlide = slider.slides[slider.activeIndex];
+   if (activeSlide.classList.contains('_anim-slide')) return;
+   const slideList = [...activeSlide.querySelector('.roadmap-list')?.children];
+   addCheckToItems(slideList);
+   counter(25, activeSlide.querySelector('.circle-loader__percent'));
+   counter(25, activeSlide.querySelector('.linear-loader__percent'));
+   activeSlide.classList.add('_anim-slide');
+}
