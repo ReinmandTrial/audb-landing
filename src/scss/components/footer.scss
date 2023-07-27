@@ -1,3 +1,209 @@
-//====================================================================================================
+.footer {
+   &__container {
+      position: relative;
+      max-width: 1180px;
+   }
 
-//====================================================================================================
+   &__content {
+      padding: 80px 0px;
+      position: relative;
+      z-index: 1;
+      @media (max-width: 767.98px) {
+         padding: 40px 0px;
+      }
+   }
+
+   &__top-text {
+      text-align: center;
+      font-size: 19px;
+      line-height: 125%;
+      text-transform: uppercase;
+      max-width: 450px;
+      margin: 0 auto 45px;
+      @media (max-width: 767.98px) {
+         margin-bottom: 20px;
+         font-size: 15px;
+      }
+   }
+
+   &__twitter-lg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 230px;
+      @media (max-width: 767.98px) {
+         margin-bottom: 100px;
+         img {
+            width: 90px;
+         }
+      }
+   }
+
+   &__center-line {
+      margin-bottom: 50px;
+   }
+
+   &__bottom-line {
+   }
+
+   &__bg {
+      will-change: filter;
+      border-radius: 50%;
+      filter: blur(227.5px);
+      position: absolute;
+      height: 40vw;
+      width: 40vw;
+      max-width: 600px;
+      max-height: 600px;
+      z-index: 0;
+      @media (max-width: 1200px) {
+         max-width: 500px;
+         max-height: 500px;
+         height: 70vw;
+         width: 70vw;
+      }
+      @media (max-width: 767.98px) {
+         max-width: 450px;
+         max-height: 450px;
+         filter: blur(70px);
+      }
+      &_1 {
+         background: #be39fc;
+         bottom: -20%;
+         left: -30%;
+         @media (max-width: 1200px) {
+            bottom: 10%;
+            left: -10%;
+         }
+         @media (max-width: 767.98px) {
+            bottom: 0;
+            left: -40%;
+         }
+      }
+
+      &_2 {
+         background: rgba(251, 163, 52, 0.7);
+         bottom: -30%;
+         left: 50%;
+         transform: translate(-50%, 0px);
+         @media (max-width: 1200px) {
+            bottom: -20%;
+         }
+         @media (max-width: 767.98px) {
+            bottom: -30%;
+         }
+      }
+
+      &_3 {
+         background: #289ef7;
+         bottom: -20%;
+         right: -30%;
+         @media (max-width: 1200px) {
+            bottom: 10%;
+            right: -10%;
+         }
+         @media (max-width: 767.98px) {
+            bottom: 0;
+            right: -40%;
+         }
+      }
+   }
+}
+
+.footer-center-line {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 35px 20px;
+   @media (max-width: 767.98px) {
+      flex-direction: column;
+   }
+   &__logo {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 145px;
+      svg {
+         max-width: 100%;
+         height: 47px;
+      }
+      span {
+         font-size: 17px;
+         font-weight: 500;
+         line-height: 125%;
+         text-transform: uppercase;
+         text-align: center;
+      }
+   }
+
+   &__text {
+      text-align: center;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 125%;
+      text-transform: uppercase;
+      flex: 0 0 40%;
+      @media (max-width: 767.98px) {
+         flex: auto;
+         font-size: 12px;
+      }
+   }
+
+   &__link-list {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+   }
+
+   &__link {
+      flex: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      transition: all 0.3s ease 0s;
+      svg {
+         height: 20px;
+         width: 20px;
+      }
+      @media (any-hover: hover) {
+         &:hover {
+            transition: all 0.3s ease 0s;
+            transform: scale(1.1);
+         }
+      }
+   }
+}
+
+.footer-bottom-line {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+   font-size: 11px;
+   text-transform: uppercase;
+   @media (max-width: 767.98px) {
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+   &__text {
+   }
+
+   &__link-lins {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      @media (max-width: 767.98px) {
+         gap: 15px;
+      }
+   }
+
+   &__link {
+      text-align: center;
+      @media (any-hover: hover) {
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+}
