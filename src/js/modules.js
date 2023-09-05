@@ -9,10 +9,6 @@ new Swiper('#swiper5', {
    slidesPerView: 1,
    speed: 1300,
    grabCursor: true,
-   //    loop: true,
-   //    autoplay: {
-   //       delay: 3000,
-   //    },
    effect: 'coverflow',
    coverflowEffect: {
       rotate: 150,
@@ -74,8 +70,6 @@ const teamSliders = document.querySelector('#teamSlider .swiper-wrapper')
 
 new Swiper('#teamSlider', {
    modules: [EffectCoverflow, Navigation],
-   // wrapperClass: 'section-14__slider-wrapper',
-   // slideClass: 'team-slide',
    effect: 'coverflow',
    slidesPerView: 1,
    allowTouchMove: false,
@@ -99,14 +93,14 @@ new Swiper('#teamSlider', {
 
 function calcDepth() {
    const width = window.innerWidth;
-   if (width > 991) return 100;
-   if (width > 0) return 100;
+   if (width > 991) return 300;
+   if (width > 0) return 300;
 }
 
 function calcStretch() {
    const width = window.innerWidth;
    if (width > 991) return 550;
-   if (width > 0) return 750;
+   if (width > 0) return 760;
 }
 
 // Screen 15========================================================================================================================================================

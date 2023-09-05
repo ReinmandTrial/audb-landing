@@ -4,7 +4,7 @@
       margin-bottom: 60px;
    }
    &__content {
-      border-radius: 40px;
+      border-radius: 155px;
       overflow: hidden;
       background: linear-gradient(
          165deg,
@@ -17,6 +17,9 @@
          #f656bb 88.06%,
          #8824f5 100%
       );
+      @media (max-width: 991.98px) {
+         border-radius: 55px;
+      }
    }
 
    &__title {
@@ -29,11 +32,11 @@
    &__slider {
       height: 1050px;
       max-width: 1440px;
-      padding: 200px 100px !important;
-      overflow: visible !important;
-      touch-action: unset !important;
+      padding: 200px 100px 100px;
+      overflow: visible;
+      touch-action: unset;
       @media (max-width: 1200px) {
-         padding: 200px 20px !important;
+         padding: 200px 20px 100px;
       }
       @media (max-width: 991.98px) {
          height: 1250px;
@@ -49,7 +52,7 @@
       position: absolute;
       z-index: 2;
       right: 11%;
-      bottom: 23%;
+      bottom: 16%;
       display: flex;
       flex-direction: column;
       gap: 15px;
@@ -105,9 +108,10 @@
    padding: 100px 50px;
    border-radius: 40px;
    background: #181818;
-   display: flex !important;
+   display: flex;
    align-items: center;
    gap: 5%;
+
    @media (any-hover: hover) {
       &:not(.swiper-slide-active):hover {
          top: -20px;
