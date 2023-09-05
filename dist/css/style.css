@@ -305,6 +305,107 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
   }
 }
 
+/*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh;
+}
+
+[data-scroll-direction=horizontal] [data-scroll-container] {
+  display: inline-block;
+  height: 100vh;
+  white-space: nowrap;
+}
+
+[data-scroll-direction=horizontal] [data-scroll-section] {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.c-scrollbar {
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform-origin: center right;
+      -ms-transform-origin: center right;
+          transform-origin: center right;
+  -webkit-transition: opacity .3s,-webkit-transform .3s;
+  transition: opacity .3s,-webkit-transform .3s;
+  transition: transform .3s,opacity .3s;
+  transition: transform .3s,opacity .3s,-webkit-transform .3s;
+  width: 11px;
+}
+
+.c-scrollbar:hover {
+  -webkit-transform: scaleX(1.45);
+      -ms-transform: scaleX(1.45);
+          transform: scaleX(1.45);
+}
+
+.c-scrollbar:hover,
+.has-scroll-dragging .c-scrollbar,
+.has-scroll-scrolling .c-scrollbar {
+  opacity: 1;
+}
+
+[data-scroll-direction=horizontal] .c-scrollbar {
+  bottom: 0;
+  height: 10px;
+  top: auto;
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+  width: 100%;
+}
+
+[data-scroll-direction=horizontal] .c-scrollbar:hover {
+  -webkit-transform: scaleY(1.3);
+      -ms-transform: scaleY(1.3);
+          transform: scaleY(1.3);
+}
+
+.c-scrollbar_thumb {
+  background-color: #000;
+  border-radius: 10px;
+  cursor: -webkit-grab;
+  cursor: grab;
+  margin: 2px;
+  opacity: .5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 7px;
+}
+
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+[data-scroll-direction=horizontal] .c-scrollbar_thumb {
+  bottom: 0;
+  right: auto;
+}
+
 @font-face {
   font-family: Roboto;
   font-display: swap;
@@ -2013,7 +2114,7 @@ body {
 }
 
 .section-14__content {
-  border-radius: 40px;
+  border-radius: 155px;
   overflow: hidden;
   background: linear-gradient(165deg, #eedd47 0%, #dd654c 10.97%, #f549cd 23.47%, #bd38fc 37.01%, #df4a38 59.41%, #eede48 75.04%, #f656bb 88.06%, #8824f5 100%);
 }
@@ -2025,17 +2126,17 @@ body {
 .section-14__slider {
   height: 1050px;
   max-width: 1440px;
-  padding: 200px 100px !important;
-  overflow: visible !important;
-  -ms-touch-action: unset !important;
-      touch-action: unset !important;
+  padding: 200px 100px 100px;
+  overflow: visible;
+  -ms-touch-action: unset;
+      touch-action: unset;
 }
 
 .section-14__navigation {
   position: absolute;
   z-index: 2;
   right: 11%;
-  bottom: 23%;
+  bottom: 16%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2083,9 +2184,9 @@ body {
   padding: 100px 50px;
   border-radius: 40px;
   background: #181818;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2627,107 +2728,6 @@ body {
   text-align: center;
 }
 
-/*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
-
-html.has-scroll-smooth {
-  overflow: hidden;
-}
-
-html.has-scroll-dragging {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.has-scroll-smooth body {
-  overflow: hidden;
-}
-
-.has-scroll-smooth [data-scroll-container] {
-  min-height: 100vh;
-}
-
-[data-scroll-direction=horizontal] [data-scroll-container] {
-  display: inline-block;
-  height: 100vh;
-  white-space: nowrap;
-}
-
-[data-scroll-direction=horizontal] [data-scroll-section] {
-  display: inline-block;
-  height: 100%;
-  vertical-align: top;
-  white-space: nowrap;
-}
-
-.c-scrollbar {
-  height: 100%;
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transform-origin: center right;
-      -ms-transform-origin: center right;
-          transform-origin: center right;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  width: 11px;
-}
-
-.c-scrollbar:hover {
-  -webkit-transform: scaleX(1.45);
-      -ms-transform: scaleX(1.45);
-          transform: scaleX(1.45);
-}
-
-.c-scrollbar:hover,
-.has-scroll-dragging .c-scrollbar,
-.has-scroll-scrolling .c-scrollbar {
-  opacity: 1;
-}
-
-[data-scroll-direction=horizontal] .c-scrollbar {
-  bottom: 0;
-  height: 10px;
-  top: auto;
-  -webkit-transform: scaleY(1);
-      -ms-transform: scaleY(1);
-          transform: scaleY(1);
-  width: 100%;
-}
-
-[data-scroll-direction=horizontal] .c-scrollbar:hover {
-  -webkit-transform: scaleY(1.3);
-      -ms-transform: scaleY(1.3);
-          transform: scaleY(1.3);
-}
-
-.c-scrollbar_thumb {
-  background-color: #000;
-  border-radius: 10px;
-  cursor: -webkit-grab;
-  cursor: grab;
-  margin: 2px;
-  opacity: 0.5;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 7px;
-}
-
-.has-scroll-dragging .c-scrollbar_thumb {
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
-}
-
-[data-scroll-direction=horizontal] .c-scrollbar_thumb {
-  bottom: 0;
-  right: auto;
-}
-
 @media (min-width: 991.98px) {
   .section-6__card-mob {
     display: none;
@@ -2827,7 +2827,7 @@ html.has-scroll-dragging {
   }
 
   .section-14__slider {
-    padding: 200px 20px !important;
+    padding: 200px 20px 100px;
   }
 
   .section-16__content {
@@ -3064,6 +3064,10 @@ html.has-scroll-dragging {
 
   .section-14 {
     margin-bottom: 60px;
+  }
+
+  .section-14__content {
+    border-radius: 55px;
   }
 
   .section-14__slider {
@@ -3666,6 +3670,10 @@ html.has-scroll-dragging {
   .section-3__anim_6 {
     top: 46%;
     left: 60%;
+  }
+
+  .card-3__top-img {
+    opacity: 0.5;
   }
 
   .card-3__text {
