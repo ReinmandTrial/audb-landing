@@ -1,7 +1,6 @@
 import '../scss/style.scss';
 import './modules.js';
 import './watcher.js';
-import '/node_modules/locomotive-scroll/dist/locomotive-scroll.min.css';
 
 import LocomotiveScroll from 'locomotive-scroll';
 

@@ -149,6 +149,7 @@
       @media (max-width: 991.98px) {
          width: 3%;
       }
+
       &_1 {
          top: 26%;
          left: 51%;
@@ -222,6 +223,9 @@
       width: 20%;
       img {
          width: 100%;
+      }
+      @media (max-width: 575.98px) {
+         opacity: 0.5;
       }
    }
    &__card-img {
